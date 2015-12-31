@@ -8,18 +8,20 @@ define('HTTPS_SERVER', 'http://www.dev.com/admin/');
 define('HTTPS_CATALOG', 'http://www.dev.com/');
 
 // DIR
-define('DIR_APPLICATION', 'E:/www/opencart/opencart-2.1.0.1/admin/');
-define('DIR_SYSTEM', 'E:/www/opencart/opencart-2.1.0.1/system/');
-define('DIR_LANGUAGE', 'E:/www/opencart/opencart-2.1.0.1/admin/language/');
-define('DIR_TEMPLATE', 'E:/www/opencart/opencart-2.1.0.1/admin/view/template/');
-define('DIR_CONFIG', 'E:/www/opencart/opencart-2.1.0.1/system/config/');
-define('DIR_IMAGE', 'E:/www/opencart/opencart-2.1.0.1/image/');
-define('DIR_CACHE', 'E:/www/opencart/opencart-2.1.0.1/system/storage/cache/');
-define('DIR_DOWNLOAD', 'E:/www/opencart/opencart-2.1.0.1/system/storage/download/');
-define('DIR_LOGS', 'E:/www/opencart/opencart-2.1.0.1/system/storage/logs/');
-define('DIR_MODIFICATION', 'E:/www/opencart/opencart-2.1.0.1/system/storage/modification/');
-define('DIR_UPLOAD', 'E:/www/opencart/opencart-2.1.0.1/system/storage/upload/');
-define('DIR_CATALOG', 'E:/www/opencart/opencart-2.1.0.1/catalog/');
+$dir = dirname(__DIR__);
+
+define('DIR_APPLICATION', $dir.'/admin/');
+define('DIR_SYSTEM', $dir.'/system/');
+define('DIR_LANGUAGE', $dir.'/admin/language/');
+define('DIR_TEMPLATE', $dir.'/admin/view/template/');
+define('DIR_CONFIG', $dir.'/system/config/');
+define('DIR_IMAGE', $dir.'/image/');
+define('DIR_CACHE', $dir.'/system/storage/cache/');
+define('DIR_DOWNLOAD', $dir.'/system/storage/download/');
+define('DIR_LOGS', $dir.'/system/storage/logs/');
+define('DIR_MODIFICATION', $dir.'/system/storage/modification/');
+define('DIR_UPLOAD', $dir.'/system/storage/upload/');
+define('DIR_CATALOG', $dir.'/catalog/');
 
 // DB
 define('DB_DRIVER', 'mpdo');
